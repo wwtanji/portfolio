@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roman Zotsenko, full stack developer</title>
+    <meta name="description" content="Roman Zotsenko builds web products end to end: Laravel and PostgreSQL underneath, React or Vue on top. Based in Nitra, Slovakia." />
+    <meta name="theme-color" content="#03050b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Roman Zotsenko, full stack developer" />
+    <meta property="og:description" content="Laravel and PostgreSQL underneath, React or Vue on top. Five products shipped since January 2026." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="is-loading">
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+      <filter id="cloud-high" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.0032 0.011" numOctaves="5" seed="4" />
+        <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 3.2 -1.45" />
+      </filter>
+      <filter id="cloud-low" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.0024 0.008" numOctaves="5" seed="11" />
+        <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 3 -1.3" />
+      </filter>
+      <filter id="concrete-grain" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+      <filter id="concrete-stain" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="4" seed="8" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+    </svg>
+
+    <div class="preloader" data-preloader role="status" aria-live="polite">
+      <p class="preloader__label">Rendering the planet</p>
+      <p class="preloader__count"><span data-preloader-count>0</span>%</p>
+      <div class="preloader__bar"><span data-preloader-bar></span></div>
+    </div>
+
+    <header class="site-header">
+      <a class="site-header__name" href="#top" data-scroll-link>Roman Zotsenko</a>
+      <nav class="site-header__nav" aria-label="Main">
+        <a href="#about" data-scroll-link>About</a>
+        <a href="#work" data-scroll-link>Work</a>
+        <a href="#contact" data-scroll-link>Contact</a>
+      </nav>
+    </header>
+
+    <aside class="telemetry" data-telemetry aria-hidden="true">
+      <span class="telemetry__label">Altitude</span>
+      <span class="telemetry__value" data-altitude>408 km</span>
+      <span class="telemetry__label">48.31° N, 18.09° E<br />Nitra, Slovakia</span>
+    </aside>
+
+    <main>
+      <section class="hero" id="top" data-hero>
+        <canvas class="hero__stars" data-starfield aria-hidden="true"></canvas>
+        <div class="hero__planet" data-planet aria-hidden="true"><canvas data-planet-canvas></canvas></div>
+        <div class="hero__sky" data-sky aria-hidden="true">
+          <svg class="cloud hero__cloud-bank"><rect width="100%" height="100%" filter="url(#cloud-low)" /></svg>
+        </div>
+        <div class="hero__porthole-intro" data-porthole-intro aria-hidden="true">
+          <div class="hero__porthole" data-porthole></div>
+        </div>
+        <div class="hero__copy" data-hero-fade>
+          <h1 class="hero__title">
+            <span class="hero__line" data-hero-line>I build</span>
+            <span class="hero__line" data-hero-line>the whole feature.</span>
+          </h1>
+          <p class="hero__intro" data-hero-detail>
+            Roman Zotsenko, full stack developer in Nitra. Laravel and PostgreSQL underneath, React or Vue on top.
+          </p>
+          <a class="button" href="#work" data-scroll-link data-magnetic data-hero-detail>See my work</a>
+        </div>
+        <p class="hero__hint" data-hero-fade>Scroll to descend</p>
+      </section>
+
+      <section class="about" id="about" data-about>
+        <svg class="cloud about__cloud about__cloud--high" data-parallax="-40"><rect width="100%" height="100%" filter="url(#cloud-high)" /></svg>
+        <svg class="cloud about__cloud about__cloud--low" data-parallax="-90"><rect width="100%" height="100%" filter="url(#cloud-low)" /></svg>
+        <p class="about__text" data-about-text>
+          Since January 2026 I have shipped five products at Ej Developer: a forum I now lead on my own, a desktop CRM
+          used by 20,000 people, and a payment platform where every transaction is worth $500 or more. Billing, queues,
+          sign-in, deploys and the screens on top. I like owning all of it.
+        </p>
+      </section>
+
+      <section class="work" id="work" data-work>
+        <div class="work__room" aria-hidden="true">
+          <div class="work__wall"></div>
+          <div class="work__floor"></div>
+          <svg class="work__texture work__texture--stain"><rect width="100%" height="100%" filter="url(#concrete-stain)" /></svg>
+          <svg class="work__texture work__texture--grain"><rect width="100%" height="100%" filter="url(#concrete-grain)" /></svg>
+          <div class="work__sunbeam" data-sunbeam></div>
+          <div class="work__vignette"></div>
+        </div>
+
+        <div class="work__track" data-work-track>
+          <header class="work__intro">
+            <h2 class="work__title">Things I have built</h2>
+            <p class="work__lead">Four projects from the last year, each taken from the first commit to production.</p>
+          </header>
+
+          <article class="project">
+            <h3 class="project__name">Crow Forum</h3>
+            <p class="project__metric"><span class="project__metric-value">5,000</span> <span class="project__metric-label">users</span></p>
+            <p class="project__summary">
+              A forum with paid listings and about 5,000 users. I wrote the API from the first commit and now lead the
+              project alone: billing guarded by Redis locks and idempotency keys, listing rotation, Telegram sign-in and
+              the deploy pipeline.
+            </p>
+            <p class="project__stack">Laravel 13, PostgreSQL, Redis, Horizon, Next.js 16</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__name">Desktop CRM</h3>
+            <p class="project__metric"><span class="project__metric-value">20,000</span> <span class="project__metric-label">people use it</span></p>
+            <p class="project__summary">
+              An Electron app used by 20,000 people. I was the top contributor: the Express API, the MySQL schema and
+              context-isolated IPC between the interface and Node.
+            </p>
+            <p class="project__stack">Electron, Express 5, MySQL</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__name">Subscription payments</h3>
+            <p class="project__metric"><span class="project__metric-value">5</span> <span class="project__metric-label">products, one codebase</span></p>
+            <p class="project__summary">
+              One Laravel codebase serving five products, each in its own module. I built all five, connected a crypto
+              payment gateway with signed webhooks and moved the interface from Livewire to Inertia and Vue.
+            </p>
+            <p class="project__stack">Laravel 12, Inertia, Vue 3, Heleket</p>
+          </article>
+
+          <article class="project">
+            <h3 class="project__name">Table reservations</h3>
+            <p class="project__metric"><span class="project__metric-value">205</span> <span class="project__metric-label">tests</span></p>
+            <p class="project__summary">
+              My bachelor's thesis. A restaurant booking system that catches overlapping reservations, picks the
+              best-fitting table, takes deposits through Stripe and is covered by 205 tests.
+            </p>
+            <p class="project__stack">FastAPI, SQLAlchemy, MySQL, React 19, Stripe</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Have something to build?</h2>
+        <p class="contact__text">
+          I am open to full-time roles, remote or on site anywhere in Europe. I reply within a day.
+        </p>
+        <a class="button" href="mailto:roman.zotsenko.dev@gmail.com" data-magnetic>Email me</a>
+        <ul class="contact__links">
+          <li><a href="https://t.me/r_zotsenko">Telegram</a></li>
+          <li><a href="https://linkedin.com/in/roman-zotsenko">LinkedIn</a></li>
+          <li><a href="https://github.com/wwtanji">GitHub</a></li>
+        </ul>
+        <footer class="contact__footer">
+          <span>In Nitra it is <time data-clock>--:--</time></span>
+          <span>© 2026 Roman Zotsenko</span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
